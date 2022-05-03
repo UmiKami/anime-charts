@@ -1,0 +1,40 @@
+.title {
+  background-color: purple;
+  color: white;
+  font-weight: bold;
+}
+
+.anime-card {
+  height: 50rem;
+  max-width: 30rem;
+  overflow-y: auto;
+  background-color: purple;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.anime-card__info-genre {
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  display: inline;
+  color: white;
+  background: black;
+}
+.anime-card__info-genre:not(:last-child) {
+  margin-right: 0.5rem;
+}
+.anime-card__title {
+  display: inline-block;
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding: 2rem 1rem;
+}
+.anime-card__description {
+  display: inline-block;
+  padding: 2rem 1rem;
+}
+
+.card-row {
+  display: inline-block;
+}/*# sourceMappingURL=AnimeCard.css.map */
