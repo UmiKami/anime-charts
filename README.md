@@ -2,9 +2,10 @@
 
 Anime charts page using AniAPI.
 
-- Should display multiple cars with a cover image, title, genre, and possibly brief description of the anime.
+- Should display multiple cards with a cover image, title, genre, and possibly brief description of the anime.
 - Pagination should be added if there is enough time.
 
 # Diary
 
-- Currently setting up the project. - 05:11 PM
+- Currently setting up the project.
+- Managed to get the API and retrieve necessary information.
