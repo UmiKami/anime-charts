@@ -1,40 +1,73 @@
-.title {
-  background-color: purple;
-  color: white;
-  font-weight: bold;
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.card-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+#anime-card::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f80000;
+}
+
+#anime-card::-webkit-scrollbar {
+  width: 12px;
+  background-color: #000000;
+}
+
+#anime-card::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #8c00ff;
 }
 
 .anime-card {
+  border-radius: 5px;
+  width: 35rem;
   height: 50rem;
-  max-width: 30rem;
-  overflow-y: auto;
+  overflow-y: scroll;
   background-color: purple;
   color: white;
+  padding: 2rem 0;
+}
+.anime-card__cover {
+  width: 33.32rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+}
+.anime-card__info-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem 0;
 }
 .anime-card__info-genre {
-  border-radius: 20px;
+  border: 1px solid white;
+  background-color: black;
   padding: 0.5rem 1rem;
-  display: inline;
-  color: white;
-  background: black;
+  border-radius: 2rem;
 }
 .anime-card__info-genre:not(:last-child) {
   margin-right: 0.5rem;
 }
 .anime-card__title {
-  display: inline-block;
+  color: white;
+  mix-blend-mode: difference;
+  text-align: center;
   font-size: 2.4rem;
   font-weight: bold;
-  padding: 2rem 1rem;
+  padding: 0.5rem 1rem;
 }
 .anime-card__description {
-  display: inline-block;
-  padding: 2rem 1rem;
-}
-
-.card-row {
-  display: inline-block;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.322), rgba(46, 46, 46, 0.178));
+  padding: 1rem 1rem;
 }/*# sourceMappingURL=AnimeCard.css.map */

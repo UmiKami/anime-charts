@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import AniCard from "./AnimeCard";
 import './styles/CSS/AnimeCard.css'
 
+
 const AniInfo = () => {
-    let count = 0
     const [animeList, setAnimeList] = useState([])
 
     useEffect(
@@ -25,7 +25,7 @@ const AniInfo = () => {
 
     return animeList.map( anime => {
         return <div className="card-row">
-            <AniCard cover={anime.cover_image} title={anime.titles.en} description={anime.descriptions.en}/>
+            <AniCard cover={anime.cover_image} title={anime.titles.en ? anime.titles.en : anime.titles.rj} description={anime.descriptions.en} genre={anime.genres} color={anime.cover_color}/>
         </div> 
     })
 }

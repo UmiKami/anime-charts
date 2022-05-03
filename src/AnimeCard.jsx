@@ -1,9 +1,10 @@
 import './styles/CSS/AnimeCard.css'
 
-const AniCard = ({cover, title, description}) => {
+const AniCard = ({cover, title, description, genre, color}) => {
 
     return <>
-        <div className="anime-card">
+
+        <div className="anime-card" id="anime-card" style={{background: color}}>
             <div className="anime-card__cover">
                 <img src={cover} alt={title + " image cover"} />
             </div>
@@ -16,9 +17,9 @@ const AniCard = ({cover, title, description}) => {
                 </div>
                 <div className="anime-card__info-bottom">
                     {/* Iterative */}
-                    {/* <p className="anime-card__info-genre">Action</p>
-                    <p className="anime-card__info-genre">Fantasy</p>
-                    <p className="anime-card__info-genre">Adventure</p> */}
+                    {genre.map(gen=>{
+                        return <div className="anime-card__info-genre">{gen}</div>
+                    })}
                 </div>
             </div>
         </div>
