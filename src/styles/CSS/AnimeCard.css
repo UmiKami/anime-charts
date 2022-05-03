@@ -1,5 +1,6 @@
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
+:root {
+  --color-p: rgb(27, 0, 27);
+  --color-t: white;
 }
 
 .card-container {
@@ -14,18 +15,18 @@
 #anime-card::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
-  background-color: #f80000;
+  background-color: var(--color-p);
 }
 
 #anime-card::-webkit-scrollbar {
   width: 12px;
-  background-color: #000000;
+  background-color: var(--color-p);
 }
 
 #anime-card::-webkit-scrollbar-thumb {
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: #8c00ff;
+  background-color: var(--color-t);
 }
 
 .anime-card {
@@ -59,6 +60,8 @@
 }
 .anime-card__title {
   color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.24);
   mix-blend-mode: difference;
   text-align: center;
   font-size: 2.4rem;

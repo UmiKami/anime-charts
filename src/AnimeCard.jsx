@@ -3,8 +3,7 @@ import './styles/CSS/AnimeCard.css'
 const AniCard = ({cover, title, description, genre, color}) => {
 
     return <>
-
-        <div className="anime-card" id="anime-card" style={{background: color}}>
+        <div className="anime-card" id="anime-card" style={{background: color, "--color-p": color}}>
             <div className="anime-card__cover">
                 <img src={cover} alt={title + " image cover"} />
             </div>

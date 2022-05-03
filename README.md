@@ -11,3 +11,4 @@ Anime charts page using AniAPI.
 - Managed to get the API and retrieve necessary information.
 - Basic info added.
 - Pagination not possible due to the way the API works.
+- Project is done, made sure it was responsive.
